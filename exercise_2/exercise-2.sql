@@ -2,5 +2,6 @@
 -- use INNER JOIN FROM customer onto rental
 
 select rental_date
-from customer inner join rental on customer.first_name = rental.rental_date
+from rental 
+inner join customer on rental.customer_id = customer.customer_id
 where customer.first_name = 'Patricia';
