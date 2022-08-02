@@ -2,4 +2,4 @@
 
 SELECT SUM(length) 
 FROM inventory
-LEFT JOIN film ON inventory.film_id = film.film_id
+LEFT JOIN film ON inventory.film_id = film.film_id;
